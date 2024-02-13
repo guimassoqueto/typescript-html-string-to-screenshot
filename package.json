@@ -1,0 +1,40 @@
+{
+  "name": "typescript-html-string-to-screenshot",
+  "version": "0.0.0",
+  "description": "HTML String To Screenshot is a program that gets an html string and get a screenshot from it",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "test": "npm run test",
+    "watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guimassoqueto/typescript-html-string-to-screenshot.git"
+  },
+  "keywords": [
+    "html",
+    "string",
+    "screenshot",
+    "puppeteer",
+    "typescript",
+    "javascript",
+    "node",
+    "nodejs"
+  ],
+  "author": "G. A. Massoqueto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guimassoqueto/typescript-html-string-to-screenshot/issues"
+  },
+  "homepage": "https://github.com/guimassoqueto/typescript-html-string-to-screenshot#readme",
+  "devDependencies": {
+    "@types/ejs": "^3.1.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "puppeteer": "^22.0.0"
+  }
+}
