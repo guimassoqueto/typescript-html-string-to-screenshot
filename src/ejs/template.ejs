@@ -1,9 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My EJS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tailwind Layout</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1 class="green">Hello, <%= name %>!</h1>
+<body class="font-poppins">
+    <header class="bg-gray-800 text-white p-6">
+        My simple layout
+    </header>
+
+    <main class="container mx-auto p-8">
+        <h1 class="mb-4">Hello, <%= name.toUpperCase() %>!</h1>
+    </main>
+
+    <footer class="bg-gray-200 text-center p-4">
+        &copy; 2024 Your Website
+    </footer>
 </body>
 </html>
