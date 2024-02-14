@@ -1,7 +1,6 @@
 import puppeteer, { ScreenshotOptions } from 'puppeteer';
 
 
-
 /**
  * Generates a screenshot of the provided HTML content using Puppeteer.
  * @param html The HTML content to generate the screenshot from.
@@ -10,6 +9,8 @@ import puppeteer, { ScreenshotOptions } from 'puppeteer';
 export async function generateScreenshot(html: string): Promise<void> {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
+
+    page.setViewport({ height:1920, width:1080 })
 
     // Set your HTML content
     await page.setContent(html, {
